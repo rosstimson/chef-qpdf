@@ -14,3 +14,5 @@ depends          'chef-sugar'
 %w( debian ubuntu centos amazon ).each do |os|
   supports os
 end
+
+recipe           'qpdf::default', 'Installs qpdf from packages'
