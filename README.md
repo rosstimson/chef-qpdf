@@ -13,10 +13,6 @@ Requirements
 Cookbooks
 ---------
 
-The [chef-sugar][chef-sugar] library cookbook is used as it provides
-some nice helpers which are used in this cookbook for switching package
-names dependant on OS version.
-
 On RHEL family distros, the "yum" cookbook is required for obtaining
 latest package indexes and adding the EPEL repo which is needed.
 
@@ -110,4 +106,3 @@ limitations under the License.
 [rubocop]:            https://github.com/bbatsov/rubocop
 [serverspec]:         https://github.com/serverspec/serverspec
 [testkitchen]:        https://github.com/test-kitchen/test-kitchen
-[chef-sugar]:         https://github.com/sethvargo/chef-sugar

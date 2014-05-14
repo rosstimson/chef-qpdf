@@ -20,11 +20,6 @@
 
 # Installation of build dependencies may fail unless package index files are
 # up to date.
-
-# chef-sugar makes it easier to target certain platform versions - the runtime
-# lib name changes a lot.
-include_recipe 'chef-sugar'
-
 case node['platform_family']
 when 'debian'
   include_recipe 'apt'
@@ -41,17 +36,11 @@ if platform_family?('rhel')
   end
 end
 
-packages = case
-           when amazon_linux?
-             %w( qpdf qpdf-libs qpdf-devel )
-           when centos?
-             %w( qpdf qpdf-libs qpdf-devel )
-           when ubuntu_after_saucy?
-             %w( qpdf libqpdf13 libqpdf-dev )
-           when ubuntu_after_precise?
-             %w( qpdf libqpdf10 libqpdf-dev )
+packages = case node['platform_family']
+           when 'rhel'
+             %w( qpdf qpdf-devel )
            else
-             %w( qpdf libqpdf3 libqpdf-dev )
+             %w( qpdf libqpdf-dev )
            end
 
 packages.each do |name|

@@ -9,7 +9,6 @@ version          '1.0.1'
 
 depends          'apt'
 depends          'yum'
-depends          'chef-sugar'
 
 %w( debian ubuntu centos amazon ).each do |os|
   supports os
