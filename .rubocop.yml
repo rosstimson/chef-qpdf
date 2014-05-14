@@ -1,0 +1,6 @@
+LineLength:
+  Max: 99
+
+SingleSpaceBeforeFirstArg:
+  Exclude:
+    - metadata.rb
