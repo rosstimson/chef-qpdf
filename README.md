@@ -64,10 +64,10 @@ Development
 Pull requests are very welcome! Ideally create a topic branch for every
 separate change you make.
 
-This cookbook uses [ChefSpec][chefspec] for unit tests. I also use [Food
-Critic][foodcritic] and [RuboCop][rubocop] to check for style issues.
-When contributing it would be very helpful if you could run these via
-`bundle exec spec` and `bundle exec style`.
+This cookbook uses [ChefSpec][chefspec] for unit tests. I also use
+[FoodCritic][foodcritic] and [RuboCop][rubocop] to check for style
+issues. When contributing it would be very helpful if you could run
+these via `bundle exec spec` and `bundle exec style`.
 
 Lastly, there are [Serverspec][serverspec] integration tests for use
 ignored. To see all of the available integration test suites just check
@@ -101,7 +101,7 @@ limitations under the License.
 [repo]:               https://github.com/rosstimson/chef-qpdf
 [issues]:             https://github.com/rosstimson/chef-qpdf/issues
 [qpdf]:               http://qpdf.sourceforge.net/
-[chefsepc]:           https://github.com/sethvargo/chefspec
+[chefspec]:           https://github.com/sethvargo/chefspec
 [foodcritic]:         https://github.com/acrmp/foodcritic
 [rubocop]:            https://github.com/bbatsov/rubocop
 [serverspec]:         https://github.com/serverspec/serverspec
